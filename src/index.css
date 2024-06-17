@@ -1,54 +1,48 @@
 @import "~normalize.css";
 
 @font-face {
-  font-family: "Merriweather Sans";
+  font-display: swap; 
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
-  src: local(""),
-    url("fonts/merriweather-sans-v20-latin_cyrillic-ext-regular.woff2")
-      format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("fonts/merriweather-sans-v20-latin_cyrillic-ext-regular.woff")
-      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('fonts/nunito-v26-cyrillic-regular.woff2') format('woff2'),
+      url('fonts/nunito-v26-cyrillic-regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Merriweather Sans";
+  font-display: swap; 
+  font-family: 'Nunito';
   font-style: normal;
-  font-weight: 500;
-  src: local(""),
-    url("fonts/merriweather-sans-v20-latin_cyrillic-ext-500.woff2")
-      format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("fonts/merriweather-sans-v20-latin_cyrillic-ext-500.woff")
-      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-weight: 600;
+  src: url('fonts/nunito-v26-cyrillic-600.woff2') format('woff2'),
+      url('fonts/nunito-v26-cyrillic-600.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Merriweather Sans";
+  font-display: swap; 
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
-  src: local(""),
-    url("fonts/merriweather-sans-v20-latin_cyrillic-ext-700.woff2")
-      format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("fonts/merriweather-sans-v20-latin_cyrillic-ext-700.woff")
-      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('fonts/nunito-v26-cyrillic-700.woff2') format('woff2'),
+      url('fonts/nunito-v26-cyrillic-700.woff') format('woff');
 }
 
+/* @font-face {
+  font-display: swap;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/comfortaa-v45-cyrillic-700.woff2') format('woff2'),
+      url('../fonts/comfortaa-v45-cyrillic-700.woff') format('woff');
+} */
+
 :root {
-  --black: #333333;
-  --orange: #cc6633;
-  --blue: #285784;
-  --green: #5bb12c;
-  --white: hsl(0, 0%, 100%);
-  --grayF5: hsl(0, 0%, 96%);
-  --greyED: hsl(0, 0%, 93%);
-  --greyE6: hsl(0, 0%, 90%);
-  --greyD9: hsl(0, 0%, 85%);
-  --greyBF: hsl(0, 0%, 75%);
-  --grey99: hsl(0, 0%, 60%);
-  --grey66: hsl(0, 0%, 40%);
+  --color-1: #392350;
+  --color-2: #210b36;
+  --color-3: #c6b6d7;
+  --color-4: #fff;
+  --color-7: #b865d6;
+  --color-8: #6e479e;
 }
 
 html {
@@ -65,11 +59,11 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: Merriweather Sans, sans-serif;
-  font-size: 16px;
+  font-family: Nunito, sans-serif;
+  font-size: 15px;
   font-weight: 400;
-  background-color: var(--grayF5);
-  color: var(--black);
+  background-color: var(--color-1);
+  color: var(--color-4);
 }
 
 img {
