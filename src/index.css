@@ -27,22 +27,24 @@
       url('fonts/nunito-v26-cyrillic-700.woff') format('woff');
 }
 
-/* @font-face {
+@font-face {
   font-display: swap;
   font-family: 'Comfortaa';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/comfortaa-v45-cyrillic-700.woff2') format('woff2'),
-      url('../fonts/comfortaa-v45-cyrillic-700.woff') format('woff');
-} */
+  src: url('fonts/comfortaa-v45-cyrillic-700.woff2') format('woff2'),
+      url('fonts/comfortaa-v45-cyrillic-700.woff') format('woff');
+}
 
 :root {
-  --color-1: #392350;
-  --color-2: #210b36;
-  --color-3: #c6b6d7;
-  --color-4: #fff;
-  --color-7: #b865d6;
-  --color-8: #6e479e;
+  --font-family: "Nunito", sans-serif;
+  --second-family: "Comfortaa", sans-serif;
+  --1: #392350;
+  --2: #210b36;
+  --3: #c6b6d7;
+  --4: #fff;
+  --7: #b865d6;
+  --8: #6e479e;
 }
 
 html {
@@ -59,11 +61,11 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: Nunito, sans-serif;
-  font-size: 15px;
+  font-family: var(--font-family), sans-serif;
+  font-size: 18px;
   font-weight: 400;
-  background-color: var(--color-1);
-  color: var(--color-4);
+  background-color: var(--4);
+  color: var(--2);
 }
 
 img {
