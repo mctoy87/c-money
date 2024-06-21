@@ -3,19 +3,19 @@ import style from './Header.module.css';
 import Layout from '../Layout';
 import Nav from '../Header/Nav';
 import Logo from './Nav/Logo';
+import { Hero } from './Hero/Hero';
 
 
 export const Header = props => {
   return (
-    <header className={style.header}>
+    <section className={style.header}>
       <Layout>
-        <div className={style.headerWrap}>
+        <header className={style.headerWrap}>
           <Logo />
           <Nav/>
-        </div>
-        <h1 className={style.title}>Платформа C-Money</h1>
-        <p className={style.text}>Удобная платформа для хранения счётов, перевода валюты и покупки криптовалюты</p>
+        </header>
+        <Hero />
       </Layout>
-    </header>
+    </section>
   )
 };

@@ -1,0 +1,47 @@
+.hero {
+  padding: 20px;
+}
+
+.heroWrap {
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 550px;
+    height: 495px;
+    right: 200px;
+    top: 104px;
+    background-image: url('./img/phones.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+.title {
+  font-family: var(--second-family);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.text {
+  max-width: 380px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 30px;
+  max-width: 380px;
+  height: 70px;
+  border-radius: 10px;
+  background: linear-gradient(47deg, #2e00b1 0%, #8100bd 48.44%, #a400be 100%);
+  font-weight: 700;
+  text-align: center;
+  color: var(--4);
+  margin-bottom: 76px;
+}

@@ -1,0 +1,72 @@
+.advantages {
+  padding-top: 45px;
+  padding-bottom: 90px;
+}
+
+.title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 257px;
+  padding-left: 41px;
+  min-height: 134px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 41px;
+    height: 4px;
+    background: linear-gradient(47deg, #2e00b1 0%, #8100bd 48.44%, #a400be 100%);
+  }
+}
+
+.itemHeader {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+  
+.itemHeader_1::before{
+  background-image: url('./img/Equalizer.svg');
+}
+.itemHeader_2::before{
+  background-image: url('./img/Lock.svg');
+}
+.itemHeader_3::before{
+  background-image: url('./img/Vector.svg');
+}
+.itemHeader_4::before{
+  background-image: url('./img//Check_circle.svg');
+}
+
+.itemText {
+  line-height: 1.3;
+}
+
