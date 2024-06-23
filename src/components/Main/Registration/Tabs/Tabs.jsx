@@ -8,10 +8,10 @@ export const Tabs = props => {
         <button className={style.link} type='button'>1</button>
       </li>
       <li className={style.item}>
-        <button className={style.link} type='button'>2</button>
+        <button className={style.link} type='button' disabled>2</button>
       </li>
       <li className={style.item}>
-        <button className={style.link} type='button'>3</button>
+        <button className={style.link} type='button' disabled>3</button>
       </li>
     </ul>
   )
