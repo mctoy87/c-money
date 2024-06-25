@@ -4,8 +4,8 @@ import logo from './img/logo.svg';
 
 export const Logo = () => {
   return (
-    <a className={style.link} href="/">
+    <button className={style.link} type='button'>
       <img className={style.logo} src={logo} alt='Логотип C-money'/>
-    </a>
+    </button>
   )
 };

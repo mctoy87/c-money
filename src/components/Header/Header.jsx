@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './Header.module.css';
 import Layout from '../Layout';
-import Nav from '../Header/Nav';
-import Logo from './Nav/Logo';
+import { Logo } from './Logo/Logo';
 import { Hero } from './Hero/Hero';
+import { BurgerMenu } from './BurgerMenu/BurgerMenu';
 
 
 export const Header = props => {
@@ -12,7 +12,7 @@ export const Header = props => {
       <Layout>
         <header className={style.headerWrap}>
           <Logo />
-          <Nav/>
+          <BurgerMenu/>
         </header>
         <Hero />
       </Layout>
