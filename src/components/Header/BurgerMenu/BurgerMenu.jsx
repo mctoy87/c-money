@@ -1,36 +1,22 @@
 import { useEffect, useState } from 'react';
 import style from './BurgerMenu.module.css';
+import { Logo } from '../Logo/Logo';
 import { ReactComponent as BurgerBtn } from './img/menu.svg';
 import { ReactComponent as CloseBtn } from './img/close.svg';
 
 export const BurgerMenu = props => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // открыт ли список бургер-меню
-  const [isDropDown, setIsDropDown] = useState(true); // влючен ли сам dropdown бургер-меню
-
-  const handleResize = () => {
-    if (document.documentElement.clientWidth < 930) {
-      setIsDropDown(true);
-    } else {
-      setIsDropDown(false);
-    }
-  };
   
-  useEffect(() => {
-    handleResize();
-
-    // return () => {
-
-    // }
-  }, [])
-
   return (
-    <div className={style.burgerMenu}>
-      {isDropDown && (
+    <div className={style.headerWrap}>
+      <div className={style.burgerMenu}>
+        <Logo />
         <button className={style.burgerBtn} onClick={() => setIsDropdownOpen(!isDropdownOpen)}  type='button'>
           {isDropdownOpen ? <CloseBtn width={24} height={24}/> : <BurgerBtn width={24} height={24}/>}
         </button>
-      )}
-      {(isDropdownOpen || !isDropDown) && (
+      </div>
+
+      {isDropdownOpen && (
         <nav className={`${style.nav} ${isDropdownOpen ? style.open : ''}}`}>
           <ul className={style.list} onClick={() => setIsDropdownOpen(false)}>
             <li className={style.item}>

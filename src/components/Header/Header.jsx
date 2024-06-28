@@ -1,21 +1,19 @@
 import React from 'react';
 import style from './Header.module.css';
 import Layout from '../Layout';
-import { Logo } from './Logo/Logo';
 import { Hero } from './Hero/Hero';
 import { BurgerMenu } from './BurgerMenu/BurgerMenu';
+import { Nav } from './Nav/Nav';
 
 
 export const Header = props => {
   return (
-    <section className={style.header}>
+    <header className={style.header}>
       <Layout>
-        <header className={style.headerWrap}>
-          <Logo />
+          <Nav/>
           <BurgerMenu/>
-        </header>
         <Hero />
       </Layout>
-    </section>
+    </header>
   )
 };

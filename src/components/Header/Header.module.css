@@ -1,19 +1,25 @@
 .header {
+  position: relative;
   padding: 20px 0 25px 0;
-  
-  background-image: url('img/bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left 395px top -140px ;
-    
+  overflow: hidden;
+  /* background-image: url('img/bg.png'); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-position: left 395px top -140px ; */
 }
 
-.headerWrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header::before {
+  content: "";
+  position: absolute;
+  width: 1032px; /* Заданный размер прямоугольника */
+  height: 566px; /* Заданный размер прямоугольника */
+  background: linear-gradient(47deg, #2e00b1 0%, #8100bd 48.44%, #a400be 100%); /* Цвет фона прямоугольника */
+  transform: rotate(21deg);
+  border-radius: 0 0 0 151px;
+  top: -130px; /* Корректировка положения */
+  right: -135px;  /* Корректировка положения */
+  z-index: -1; /* За контейнером */
 }
-
 
 @media (max-width: 930px) {
   .header {
