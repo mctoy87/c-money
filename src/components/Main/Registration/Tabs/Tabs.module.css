@@ -17,5 +17,10 @@
   border-radius: 50%;
   background-color: var(--4);
   border: 2px solid var(--8);
+  font-size: 30px;
+
 }
 
+.link:disabled {
+  border: 1px solid var(--3);
+}

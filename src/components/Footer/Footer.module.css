@@ -7,23 +7,24 @@
 }
 
 .logo {
-
+  margin-right: 43px;
+  align-self: flex-start;
 }
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 20px;
+  /* justify-content: space-between; */
+  margin-bottom: 55px;
 }
 
 .links {
-
+  min-width: 220px;
+  padding-top: 8px;
+  margin-right: 20px;
 }
 
 .linkItem {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   
   &:last-child {
     margin-bottom: auto;
@@ -34,13 +35,20 @@
 
 }
 
+.contactsWrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 22px;
+}
+
 .contacts {
-  margin-bottom: 20px;
+  padding-top: 8px;
   font-weight: 700;
 }
 
 .contactItem {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   
   &:last-child {
     margin-bottom: auto;
@@ -52,7 +60,7 @@
 }
 
 .address {
-
+  display: none;
 }
 
 .socialList {
@@ -61,9 +69,13 @@
 }
 
 .socialItem {
-
+  height: 46px;
 }
 
 .socialLink {
 
+}
+
+.mapWrapper {
+  padding-top: 8px;
 }

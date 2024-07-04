@@ -13,11 +13,16 @@ export const YandexMap = props => {
   };
 
   return (
-    <YMaps>
+    <YMaps
+      query={{
+        apikey: '4ac7d6e0-ce6b-4f2c-979b-077f7cc90c8d',
+        lang: 'ru_RU'
+      }}
+    >
       <Map
         defaultState={mapState} 
-        width="580px" 
-        height="260px"
+        width="355px" 
+        height="200px"
       >
         <Placemark 
           geometry={mapState.center} 

@@ -10,11 +10,12 @@ export const Reviews = props => {
     <section className={style.reviews}>
       <Layout>
         <h2 className={style.title}>Отзывы наших клиентов</h2>
-        <ul className={style.list}>
+        <div className={style.listWrap}>
+          <ul className={style.list}>
           <li className={style.item}>
-            {/* <div className={style.imgWrap}> */}
+            <div className={style.imgWrap}>
               <img className={style.img} src={review_1} alt='Отзыв нашего клиента об услугах сервиса'/>
-            {/* </div> */}
+            </div>
             <p className={style.name}>Юлия С</p>
             <p className={style.review}>&laquo;Очень удобная платформа для открытия мультивалютных счётов&raquo;</p>
           </li>
@@ -24,7 +25,7 @@ export const Reviews = props => {
               <img className={style.img} src={review_2} alt='Отзыв нашего клиента об услугах сервиса'/>
             </div>
             <p className={style.name}>Светлана Н</p>
-            <p className={style.review}>&laquo;Пользуюсь платформой уже больше года, нравится, что можно быстро менять валюту по&nbsp;выгодному курсу&raquo;</p>
+            <p className={style.review}>&laquo;Пользуюсь платформой уже&nbsp;больше года,&nbsp;нравится, что можно быстро менять валюту&nbsp;по&nbsp;выгодному курсу&raquo;</p>
           </li>
           <li className={style.item}>
             <div className={style.imgWrap}>
@@ -33,7 +34,8 @@ export const Reviews = props => {
             <p className={style.name}>Сергей А</p>
             <p className={style.review}>&laquo;Открыл счёт в&nbsp;биткоинах, могу быстро следить за&nbsp;курсом и&nbsp;делать обмен&raquo;</p>
           </li>
-        </ul>
+          </ul>
+        </div>
       </Layout>
     </section>
   )

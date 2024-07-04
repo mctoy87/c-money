@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import style from './BurgerMenu.module.css';
 import { Logo } from '../Logo/Logo';
 import { ReactComponent as BurgerBtn } from './img/menu.svg';

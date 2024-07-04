@@ -1,6 +1,7 @@
 .link {
   background-color: transparent;
   border: none;
+  max-height: 38px;
 
   /* @media (max-width: ) {
     

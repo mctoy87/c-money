@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  padding: 20px 0 25px 0;
+  padding: 20px 0 54px 0;
   overflow: hidden;
   /* background-image: url('img/bg.png'); */
   /* background-repeat: no-repeat;
@@ -19,6 +19,15 @@
   top: -130px; /* Корректировка положения */
   right: -135px;  /* Корректировка положения */
   z-index: -1; /* За контейнером */
+}
+
+@media (max-width:1041px) {
+  .header::before {
+    top: -112px;
+    right: -105px;
+    width: 862px; /* Заданный размер прямоугольника */
+    height: 405px; /* Заданный размер прямоугольника */
+  }
 }
 
 @media (max-width: 930px) {

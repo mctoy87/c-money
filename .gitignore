@@ -11,6 +11,9 @@
 # production
 /build
 
+#figma maket's
+/.figma
+
 # misc
 .DS_Store
 .env.local

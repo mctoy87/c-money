@@ -15,17 +15,17 @@ export const Registration = props => {
         <form className={style.form}>
           <fieldset className={style.fieldset}>
             <div className={style.inputWrap}>
-              <label className={style.label} for='name'>Имя</label>
-              <input className={style.input} type='text' id='name'/>
+              <label className={style.label} htmlFor='name'>Имя</label>
+              <input className={style.input} type='text' id='name' autoComplete='given-name'/>
             </div>
 
             <div className={style.inputWrap}>
-              <label className={style.label} for='surname'>Фамилия</label>
+              <label className={style.label} htmlFor='surname'>Фамилия</label>
               <input className={style.input} type='text' id='surname'/>
             </div>
 
             <div className={style.inputWrap}>
-              <label className={style.label} for='patronymic'>Отчество</label>
+              <label className={style.label} htmlFor='patronymic'>Отчество</label>
               <input className={style.input} type='text' id='patronymic'/>
             </div>
 
@@ -36,13 +36,13 @@ export const Registration = props => {
           
           <fieldset className={`${style.fieldset} visually-hidden`}>
             <div className={style.inputWrap}>
-              <label className={style.label} for='tel'>Телефон</label>
-              <input className={style.input} type='tel' id='tel'/>
+              <label className={style.label} htmlFor='tel'>Телефон</label>
+              <input className={style.input} type='tel' id='tel' autoComplete='tel'/>
             </div>
 
             <div className={style.inputWrap}>
-              <label className={style.label} for='mail'>Электронная почта</label>
-              <input className={style.input} type='mail' id='mail'/>
+              <label className={style.label} htmlFor='mail'>Электронная почта</label>
+              <input className={style.input} type='mail' id='mail' autoComplete='email'/>
             </div>
 
             <div className={`${style.inputWrap} ${style.submitWrap}`}>
@@ -52,17 +52,17 @@ export const Registration = props => {
           
           <fieldset className={`${style.fieldset} visually-hidden`}>
             <div className={style.inputWrap}>
-              <label className={style.label} for='login'>Придумайте логин</label>
+              <label className={style.label} htmlFor='login'>Придумайте логин</label>
               <input className={style.input} type='text' id='login'/>
             </div>
 
             <div className={style.inputWrap}>
-              <label className={style.label} for='password'>Придумайте пароль</label>
+              <label className={style.label} htmlFor='password'>Придумайте пароль</label>
               <input className={style.input} type='text' id='password'/>
             </div>
 
             <div className={style.inputWrap}>
-              <label className={style.label} for='passwordRepeat'>Повторите пароль</label>
+              <label className={style.label} htmlFor='passwordRepeat'>Повторите пароль</label>
               <input className={style.input} type='text' id='passwordRepeat'/>
             </div>
 

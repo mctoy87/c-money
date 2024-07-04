@@ -1,6 +1,6 @@
 .registration {
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
   background-color: #eee2fa;
 }
 
@@ -8,12 +8,13 @@
   font-family: var(--second-family);
   font-size: 40px;
   margin-bottom: 30px;
+  max-width: 780px;
 }
 
 .about {
   font-size: 24px;
   line-height: 1.2;
-  margin-bottom: 60px;
+  margin-bottom: 66px;
 }
 
 .form {
@@ -29,7 +30,7 @@
   grid-template-rows: repeat(2, 1fr);
   justify-content: space-between;
   align-items: center;
-  gap: 30px 17px;
+  gap: 33px 17px;
 }
 
 .inputWrap {
