@@ -12,9 +12,9 @@
 }
 
 .about {
-  font-size: 24px;
+  font-size: 30px;
   line-height: 1.2;
-  margin-bottom: 66px;
+  margin-bottom: 60px;
 }
 
 .form {
@@ -73,3 +73,9 @@
   color: var(--4);
 }
 
+@media (max-width:1041px) {
+  .about {
+    font-size: 24px;
+    margin-bottom: 66px;
+  }
+}

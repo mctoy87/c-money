@@ -14,7 +14,6 @@ export const Footer = props => {
       </h2>
       <Layout>
           <div className={style.wrapper}>
-          <div className={style.imgWrap}></div>
             <img className={style.logo} src={logo} alt="Логотип C-money" />
             <ul className={style.links}>
               <li className={style.linkItem}>
@@ -73,7 +72,7 @@ export const Footer = props => {
               </ul>
             </div>
             <div className={style.mapWrapper}>
-              <YandexMap/>
+              <YandexMap className={style.map}/>
             </div>
           </div>
 

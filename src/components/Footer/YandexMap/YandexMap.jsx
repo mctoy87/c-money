@@ -21,8 +21,8 @@ export const YandexMap = props => {
     >
       <Map
         defaultState={mapState} 
-        width="355px" 
-        height="200px"
+        width="420px" 
+        height="100%"
       >
         <Placemark 
           geometry={mapState.center} 

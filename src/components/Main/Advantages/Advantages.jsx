@@ -10,7 +10,7 @@ export const Advantages = props => {
         <ul className={style.list}>
           <li className={style.item}>
             <p className={`${style.itemHeader} ${style.itemHeader_1}`}>Статистика</p>
-            <p className={style.itemText}>можно быстро отследить&nbsp;статистику доходов и&nbsp;расходов</p>
+            <p className={style.itemText}>можно быстро отследить статистику доходов и&nbsp;расходов</p>
           </li>
           <li className={style.item}>
             <p className={`${style.itemHeader} ${style.itemHeader_2}`}>Надёжность</p>
@@ -18,12 +18,12 @@ export const Advantages = props => {
           </li>
           <li className={style.item}>
             <p className={`${style.itemHeader} ${style.itemHeader_3}`}>Обмен валюты</p>
-            <p className={style.itemText}>обмен валюты по&nbsp;самому&nbsp;выгодному курсу
+            <p className={style.itemText}>обмен валюты по&nbsp;самому выгодному курсу
             </p>
           </li>
           <li className={style.item}>
             <p className={`${style.itemHeader} ${style.itemHeader_4}`}>Удобство</p>
-            <p className={style.itemText}>удобная платформа для отслежки счётов</p>
+            <p className={style.itemText}>удобная платформа для&nbsp;отслежки счётов</p>
           </li>
         </ul>
       </Layout>

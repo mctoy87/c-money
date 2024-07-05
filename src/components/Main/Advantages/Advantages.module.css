@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 54px;
+  padding-top: 83px;
   padding-bottom: 90px;
 }
 
@@ -7,7 +7,7 @@
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 40px;
-  margin-bottom: 53px;
+  margin-bottom: 50px;
 }
 
 .list {
@@ -19,7 +19,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 221px;
+  max-width: 257px;
   padding-left: 41px;
   min-height: 131px;
 
@@ -38,7 +38,7 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 1.2;
-  margin-bottom: 14px;
+  margin-bottom: 9px;
 
   &::before {
     content: '';
@@ -70,7 +70,21 @@
 }
 
 @media (max-width:1041px) {
+  .advantages {
+    padding-top: 54px;
+    /* padding-bottom: 90px; */
+  }
+
+  .title {
+    margin-bottom: 53px;
+  }
+
+  .item {
+    max-width: 221px;
+  }
+
   .itemHeader {
     font-size: 24px;
+    margin-bottom: 14px;
   }
 }

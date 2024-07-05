@@ -7,20 +7,21 @@
 }
 
 .logo {
-  margin-right: 43px;
+  margin-right: 38px;
   align-self: flex-start;
 }
 
 .wrapper {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin-bottom: 55px;
+  gap: 20px;
 }
 
 .links {
   min-width: 220px;
   padding-top: 8px;
-  margin-right: 20px;
+  margin-right: auto;
 }
 
 .linkItem {
@@ -60,7 +61,6 @@
 }
 
 .address {
-  display: none;
 }
 
 .socialList {
@@ -77,5 +77,25 @@
 }
 
 .mapWrapper {
+  width: 420px;
+  height: 200px;
   padding-top: 8px;
+}
+
+.map {
+  /* width: 420px;
+  height: 200px; */
+}
+
+
+@media (max-width:1041px) {
+  .logo {
+    margin-right: 43px;
+  }
+  .address {
+    display: none;
+  }
+  .map {
+    width: 355px;
+  }
 }
