@@ -27,8 +27,13 @@
   }
 }
 
-/* @media (max-width: 930px) {
-  .header {
-    background-position: left 180px top -45px;
+@media (max-width: 800px) {
+  .header::before {
+    top: -9px;
+    right: -361px;
+    width: 862px;
+    height: 461px;
+    transform: rotate(32deg);
+    border-radius: 0 0 0 100px;
   }
-} */
+}

@@ -72,7 +72,7 @@ export const Footer = props => {
               </ul>
             </div>
             <div className={style.mapWrapper}>
-              <YandexMap className={style.map}/>
+              <YandexMap className={style.map} style={{ width: '100%', height: '100%' }}/>
             </div>
           </div>
 

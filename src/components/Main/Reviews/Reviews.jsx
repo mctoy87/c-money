@@ -4,6 +4,7 @@ import { Layout } from '../../Layout/Layout';
 import review_1 from './img/1.jpg';
 import review_2 from './img/2.jpg';
 import review_3 from './img/3.jpg';
+import {ReactComponent as ArrowIcon} from './img/arrow.svg';
 
 export const Reviews = props => {
   return (
@@ -11,6 +12,11 @@ export const Reviews = props => {
       <Layout>
         <h2 className={style.title}>Отзывы наших клиентов</h2>
         <div className={style.listWrap}>
+
+          <button className={style.prevBtn} type='button'>
+            <ArrowIcon/>
+          </button>
+
           <ul className={style.list}>
           <li className={style.item}>
             <div className={style.imgWrap}>
@@ -35,6 +41,11 @@ export const Reviews = props => {
             <p className={style.review}>&laquo;Открыл счёт в&nbsp;биткоинах, могу быстро следить за&nbsp;курсом и&nbsp;делать обмен&raquo;</p>
           </li>
           </ul>
+
+          <button className={style.nextBtn} type='button'>
+            <ArrowIcon/>
+          </button>
+
         </div>
       </Layout>
     </section>

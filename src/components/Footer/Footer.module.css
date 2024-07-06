@@ -50,6 +50,7 @@
 
 .contactItem {
   margin-bottom: 14px;
+  white-space: no-wrap;
   
   &:last-child {
     margin-bottom: auto;
@@ -77,14 +78,11 @@
 }
 
 .mapWrapper {
-  width: 420px;
+  max-width: 420px;
+  width: 100%;
   height: 200px;
   padding-top: 8px;
-}
-
-.map {
-  /* width: 420px;
-  height: 200px; */
+  overflow: hidden;
 }
 
 
@@ -95,7 +93,16 @@
   .address {
     display: none;
   }
-  .map {
-    width: 355px;
+}
+
+@media (max-width:800px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .mapWrapper {
+    padding: 0;
+    max-width: none;
+    height: auto;
   }
 }

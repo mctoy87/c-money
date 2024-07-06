@@ -3,6 +3,24 @@
   padding-bottom: 113px;
 }
 
+.prevBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+.nextBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  transform: rotate(180deg);
+}
+
+
 .title {
   font-family: var(--second-family);
   font-weight: 700;
@@ -14,6 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .list {
