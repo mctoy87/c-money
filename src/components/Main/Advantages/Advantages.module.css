@@ -88,3 +88,29 @@
     margin-bottom: 14px;
   }
 }
+
+@media (max-width: 800px) {
+  .advantages {
+    padding-top: 40px;
+    padding-bottom: 83px;
+  }
+
+  .title {
+    max-width: 380px;
+    margin-bottom: 41px;
+  }
+
+  .list {
+    flex-wrap: wrap;
+    gap: 44px 12px;
+  }
+
+  .item {
+    max-width: 257px;
+    min-height: auto;
+  }
+
+  .itemText {
+    margin-bottom: 16px;
+  }
+}

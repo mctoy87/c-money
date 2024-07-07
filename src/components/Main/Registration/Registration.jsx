@@ -29,7 +29,7 @@ export const Registration = props => {
               <input className={style.input} type='text' id='patronymic'/>
             </div>
 
-            <div className={`${style.inputWrap} ${style.submitWrap}`}>
+            <div className={style.submitWrap}>
               <button className={style.submit}>Далее</button>
             </div>
           </fieldset>
@@ -45,7 +45,7 @@ export const Registration = props => {
               <input className={style.input} type='mail' id='mail' autoComplete='email'/>
             </div>
 
-            <div className={`${style.inputWrap} ${style.submitWrap}`}>
+            <div className={style.submitWrap}>
               <button className={style.submit}>Далее</button>
             </div>
           </fieldset>
@@ -66,7 +66,7 @@ export const Registration = props => {
               <input className={style.input} type='text' id='passwordRepeat'/>
             </div>
 
-            <div className={`${style.inputWrap} ${style.submitWrap}`}>
+            <div className={style.submitWrap}>
               <button className={style.submit}>Далее</button>
             </div>
           </fieldset>

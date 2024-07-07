@@ -86,5 +86,22 @@
   .btn {
     margin: auto;
   }
+}
 
+@media (max-width: 800px) {
+  .hero {
+    padding-top: 446px;
+  }
+
+  .heroWrap::before {
+    top: 0;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .text {
+    text-align: center;
+  }
 }
