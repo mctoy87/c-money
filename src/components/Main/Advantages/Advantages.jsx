@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Advantages.module.css';
 import { Layout } from '../../Layout/Layout';
 
+
 export const Advantages = props => {
   return (
     <section className={style.advantages}>

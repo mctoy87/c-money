@@ -14,7 +14,9 @@ export const Footer = props => {
       </h2>
       <Layout>
           <div className={style.wrapper}>
+          <div className={style.logoWrap}>
             <img className={style.logo} src={logo} alt="Логотип C-money" />
+          </div>
             <ul className={style.links}>
               <li className={style.linkItem}>
                 <a href="/" className={style.link}>

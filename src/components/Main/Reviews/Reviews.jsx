@@ -31,7 +31,7 @@ export const Reviews = props => {
               <img className={style.img} src={review_2} alt='Отзыв нашего клиента об услугах сервиса'/>
             </div>
             <p className={style.name}>Светлана Н</p>
-            <p className={style.review}>&laquo;Пользуюсь платформой уже&nbsp;больше года,&nbsp;нравится, что можно быстро менять валюту&nbsp;по&nbsp;выгодному курсу&raquo;</p>
+            <p className={style.review}>&laquo;Пользуюсь платформой уже&nbsp;больше&nbsp;года, нравится, что можно быстро менять валюту по&nbsp;выгодному&nbsp;курсу&raquo;</p>
           </li>
           <li className={style.item}>
             <div className={style.imgWrap}>

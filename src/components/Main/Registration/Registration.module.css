@@ -110,3 +110,35 @@
     margin-bottom: 5px;
   }
 }
+
+@media (max-width: 380px) {
+  .registration {
+    padding-top: 40px;
+  }
+
+  .container {
+    padding-right: 25px;
+  }
+
+  .title {
+    font-size: 19px;
+    margin-bottom: 9px;
+  }
+
+  .about {
+    font-size: 17px;
+    margin-bottom: 22px;
+    max-width: 210px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .input {
+    height: 50px;
+    min-height: auto;
+    padding: 10px;
+    border: 1px  solid var(--3);
+  }
+}

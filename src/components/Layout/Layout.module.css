@@ -8,6 +8,11 @@
 @media (max-width:800px) {
   .container {
     max-width: 624px;
+  }
+}
 
+@media (max-width: 380px) {
+  .container {
+    padding: 0 15px;
   }
 }

@@ -7,6 +7,12 @@
 }
 
 .logo {
+  width: 100%;
+  width: 141px;
+}
+
+.logoWrap {
+  min-height: 38px;
   margin-right: 38px;
   align-self: flex-start;
 }
@@ -87,7 +93,7 @@
 
 
 @media (max-width:1041px) {
-  .logo {
+  .logoWrap {
     margin-right: 43px;
   }
   .address {
@@ -96,13 +102,50 @@
 }
 
 @media (max-width:800px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+
   .wrapper {
     flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 0;
+  }
+
+  .logoWrap {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+
+  .links {
+    margin-right: 0;
+  }
+
+  .wrapper {
+    justify-content: flex-start;
+    margin-bottom: 50px;
+  }
+
+  .contactsWrap {
+    margin-right: 0;
+    max-width: 340px;
+    margin-bottom: 42px;
+  }
+
+  .contacts {
+    margin-bottom: 18px;
+  }
+
+  .address {
+    display: block;
   }
 
   .mapWrapper {
     padding: 0;
     max-width: none;
     height: auto;
+    height: 260px;
   }
 }

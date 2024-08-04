@@ -41,3 +41,17 @@
     border-radius: 0 0 0 100px;
   }
 }
+
+
+@media (max-width: 380px) {
+  .header {
+    padding-bottom: 30px;
+  }
+
+  .header::before {
+    top: 41px;
+    right: -663px;
+    transform: rotate(38deg);
+    border-radius: 0 0 0 80px;
+  }
+}

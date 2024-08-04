@@ -24,3 +24,18 @@
 .link:disabled {
   border: 1px solid var(--3);
 }
+
+@media (max-width: 380px) {
+  .tabs {
+    gap: 20px;
+  }
+
+  .item {
+    width: 33px;
+    height: 33px;
+  }
+
+  .link {
+    font-size: 18px;
+  }
+}

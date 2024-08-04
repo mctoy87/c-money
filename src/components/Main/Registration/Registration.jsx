@@ -8,7 +8,7 @@ export const Registration = props => {
     <section className={style.registration}>
       <Layout>
         <h2 className={style.title}>Как зарегистрироваться на&nbsp;платформе</h2>
-        <p className={style.about}>Пошагово заполните все поля формы</p>
+        <p className={style.about}>Пошагово заполните все&nbsp;поля формы</p>
         <Tabs />
 
 
