@@ -1,5 +1,7 @@
 .headerWrap {
   display: none;
+  position: relative;
+
 }
 
 .burgerMenu {  
@@ -7,7 +9,11 @@
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-  margin-bottom: 36px;
+  padding-bottom: 36px;
+}
+
+.nav {
+  background-color: var(--4);
 }
 
 .burgerBtn {
@@ -15,6 +21,7 @@
   width: 24px;
   height: 24px;
   border: none;
+
 }
 
 .list {
@@ -33,5 +40,12 @@
 @media (max-width: 930px) {
   .headerWrap {
     display: block;
+  }
+}
+
+@media (max-width:800px) {
+  .burgerMenu_open {
+    background-color: var(--4);
+    margin-bottom: 0;
   }
 }

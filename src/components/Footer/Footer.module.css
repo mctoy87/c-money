@@ -149,3 +149,42 @@
     height: 260px;
   }
 }
+
+@media (max-width: 380px) {
+  .footer {
+    padding-top: 41px;
+  }
+
+  .wrapper {
+    margin-bottom: 42px;
+  }
+
+  .links {
+    font-size: 14px;
+    margin-bottom: 13px;
+  }
+
+  .linkItem {
+    margin-bottom: 7px;
+  }
+
+  .contacts {
+    font-size: 14px;
+  }
+
+  .contactItem {
+    margin-bottom: 8px;
+  }
+
+  .contactsWrap {
+    margin-bottom: 30px;
+  }
+
+  .mapWrapper {
+    height: 180px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}

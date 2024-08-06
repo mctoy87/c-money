@@ -14,7 +14,7 @@ export const Reviews = props => {
         <div className={style.listWrap}>
 
           <button className={style.prevBtn} type='button'>
-            <ArrowIcon/>
+            <ArrowIcon className={style.svg}/>
           </button>
 
           <ul className={style.list}>

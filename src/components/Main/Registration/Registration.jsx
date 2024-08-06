@@ -29,9 +29,7 @@ export const Registration = props => {
               <input className={style.input} type='text' id='patronymic'/>
             </div>
 
-            <div className={style.submitWrap}>
               <button className={style.submit}>Далее</button>
-            </div>
           </fieldset>
           
           <fieldset className={`${style.fieldset} visually-hidden`}>

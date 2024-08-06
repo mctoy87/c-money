@@ -131,6 +131,10 @@
     margin-bottom: 13px;
   }
 
+  .item::after {
+    height: 2px;
+  }
+
   .itemText {
     font-size: 14px;
     margin-bottom: 13px;
