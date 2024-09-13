@@ -9,28 +9,26 @@ export const BurgerMenu = props => {
   
   return (
     <div className={style.headerWrap}>
-      <div className={`${style.burgerMenu} ${isDropdownOpen ? style.burgerMenu_open : ''}`}>
-        <Logo />
-        <button className={style.burgerBtn} onClick={() => setIsDropdownOpen(!isDropdownOpen)}  type='button'>
-          {isDropdownOpen ? <CloseBtn width={14} height={14}/> : <BurgerBtn width={24} height={24}/>}
-        </button>
+        <div className={`${style.burgerMenu} ${isDropdownOpen ? style.burgerMenu_open : ''}`}>
+          <Logo />
+          <button className={style.burgerBtn} onClick={() => setIsDropdownOpen(!isDropdownOpen)}  type='button'>
+            {isDropdownOpen ? <CloseBtn width={14} height={14}/> : <BurgerBtn width={24} height={24}/>}
+          </button>
+        </div>
+  
+        <nav className={`${style.nav} ${isDropdownOpen ? style.nav_open : ''}`}>
+          <ul className={style.list}>
+            <li className={style.item}>
+              <a href='#advantages'>Почему с нами выгодно?</a>  
+            </li>
+            <li className={style.item}>
+              <a href='#registration'>Регистрация</a>
+            </li>
+            <li className={style.item}>
+              <a href='#feedback'>Отзывы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      {isDropdownOpen && (
-          <nav className={style.nav}>
-            <ul className={style.list} onClick={() => setIsDropdownOpen(false)}>
-              <li className={style.item}>
-                <a href='#advantages'>Почему с нами выгодно?</a>  
-              </li>
-              <li className={style.item}>
-                <a href='#registration'>Регистрация</a>
-              </li>
-              <li className={style.item}>
-                <a href='#feedback'>Отзывы</a>
-              </li>
-            </ul>
-          </nav>
-      )}
-    </div>
   );
 };

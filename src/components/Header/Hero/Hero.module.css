@@ -47,26 +47,45 @@
   font-weight: 700;
   text-align: center;
   color: var(--4);
+  position: relative;
+  overflow: hidden;
+  outline: none;
+
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0); /* Начальная прозрачность */
+    transition: background 0.3s ease; /* Плавный переход */
+    pointer-events: none; /* Позволяет кликам проходить через псевдоэлемент */
+  }
+
+  &:hover::after {
+    background: rgba(255, 255, 255, 0.1); /* Прозрачность при наведении */
+  }
+  
+  &:focus::after {
+    background: rgba(255, 255, 255, 0.2); /* Прозрачность при наведении */
+  }
 }
 
 @media (max-width: 1100px) {
+  .hero {
+    padding-top: 212px;
+  }
+
   .heroWrap::before {
     width: 455px;
     height: 408px;
     top: 55px;
     right: 0;
   }
-
 }
 
-@media (max-width: 1041px) {
-  .hero {
-    padding-top: 212px;
-  }
-}
-
-@media (max-width: 930px) {
-
+@media (max-width: 990px) {
   .hero {
     padding-top: 484px;
   }
@@ -132,5 +151,16 @@
   .btn {
     font-size: 16px;
     height: 50px;
+  }
+}
+
+/* Отключаем ховер для тачскринов */
+@media (hover: none) and (pointer: coarse) {
+  .btn:hover::after {
+    background-color: inherit; /* Убираем эффект hover */
+  }
+
+  .btn:active::after {
+    background: rgba(255, 255, 255, 0.1); /* Прозрачность при наведении */ /* Добавляем эффект при активном нажатии */
   }
 }

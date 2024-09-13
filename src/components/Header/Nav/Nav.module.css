@@ -19,7 +19,7 @@
   color: var(--4);
 }
 
-@media (max-width: 930px) {
+@media (max-width: 990px) {
   .headerWrap {  
     display: none;
   }

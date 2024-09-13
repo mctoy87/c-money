@@ -5,7 +5,7 @@ import { Layout } from '../../Layout/Layout';
 
 export const Advantages = props => {
   return (
-    <section className={style.advantages}>
+    <section className={style.advantages} id='advantages'>
       <Layout>
         <h2 className={style.title}>Почему с&nbsp;нами выгодно?</h2>
         <ul className={style.list}>

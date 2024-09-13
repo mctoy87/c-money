@@ -33,6 +33,11 @@
   gap: 33px 17px;
 }
 
+
+.fieldset_next {
+  display: none;
+}
+
 .inputWrap {
 }
 
@@ -82,17 +87,40 @@
   min-height: 70px;
   background-image: linear-gradient(47deg, #2e00b1 0%, #8100bd 48.44%, #a400be 100%);
   background-color: rgba(255, 255, 255, 0.1);
-  /* background-color: transparent; */
   padding: 12px 30px;
   color: var(--4);
-
-  &:hover,
-  &:focus {
-    background-color: rgba(255, 255, 255, 0.9);
-  }
+  position: relative;
+  overflow: hidden;
+  outline: none;
 }
 
-@media (max-width:1041px) {
+.submit:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0); /* Начальная прозрачность */
+  transition: background 0.3s ease; /* Плавный переход */
+  pointer-events: none; /* Позволяет кликам проходить через псевдоэлемент */
+}
+
+.submit:hover::after {
+  background: rgba(255, 255, 255, 0.1); /* Прозрачность при наведении */
+}
+
+.submit:focus::after {
+  background: rgba(255, 255, 255, 0.2); /* Прозрачность при наведении */
+}
+
+.submit:hover,
+.submit:focus {
+  /* Обеспечиваем, что текст и другие элементы кнопки остаются поверх псевдоэлемента */
+  z-index: 1;
+}
+
+@media (max-width:990px) {
   .about {
     font-size: 24px;
     margin-bottom: 66px;
@@ -127,6 +155,10 @@
     font-weight: 700;
     font-size: 15px;
     margin-bottom: 5px;
+  }
+
+  .fieldset_next {
+    display: none;
   }
 }
 
@@ -191,5 +223,24 @@
 
   .copyright {
     font-size: 14px;
+  }
+}
+
+/* Отключаем ховер для тачскринов */
+@media (hover: none) and (pointer: coarse) {
+  .submit:hover::after {
+    background-color: inherit; /* Убираем эффект hover */
+  }
+
+  .submit:active::after {
+    background: rgba(255, 255, 255, 0.1); /* Прозрачность при наведении */ /* Добавляем эффект при активном нажатии */
+  }
+
+  .input:hover {
+    border: none;
+  }
+  
+  .input:active {
+    border: 2px solid var(--8);
   }
 }

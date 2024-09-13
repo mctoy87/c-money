@@ -8,7 +8,7 @@ import {ReactComponent as ArrowIcon} from './img/arrow.svg';
 
 export const Reviews = props => {
   return (
-    <section className={style.reviews}>
+    <section className={style.reviews} id='feedback'>
       <Layout>
         <h2 className={style.title}>Отзывы наших клиентов</h2>
         <div className={style.listWrap}>

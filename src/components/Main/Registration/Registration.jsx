@@ -5,15 +5,15 @@ import { Layout } from '../../Layout/Layout';
 
 export const Registration = props => {
   return (
-    <section className={style.registration}>
+    <section className={style.registration} id='registration'>
       <Layout>
-        <h2 className={style.title}>Как зарегистрироваться на&nbsp;платформе</h2>
+        <h2 className={style.title}>Как зарегистриро&shy;ваться на&nbsp;платформе</h2>
         <p className={style.about}>Пошагово заполните все&nbsp;поля формы</p>
         <Tabs />
 
 
         <form className={style.form}>
-          <fieldset className={style.fieldset}>
+          <fieldset className={`${style.fieldset} ${style.fieldset_current}`}>
             <div className={style.inputWrap}>
               <label className={style.label} htmlFor='name'>Имя</label>
               <input className={style.input} type='text' id='name' autoComplete='given-name'/>
@@ -32,7 +32,7 @@ export const Registration = props => {
               <button className={style.submit}>Далее</button>
           </fieldset>
           
-          <fieldset className={`${style.fieldset} visually-hidden`}>
+          <fieldset className={`${style.fieldset} ${style.fieldset_next}`}>
             <div className={style.inputWrap}>
               <label className={style.label} htmlFor='tel'>Телефон</label>
               <input className={style.input} type='tel' id='tel' autoComplete='tel'/>
@@ -48,7 +48,7 @@ export const Registration = props => {
             </div>
           </fieldset>
           
-          <fieldset className={`${style.fieldset} visually-hidden`}>
+          <fieldset className={`${style.fieldset} ${style.fieldset_next}`}>
             <div className={style.inputWrap}>
               <label className={style.label} htmlFor='login'>Придумайте логин</label>
               <input className={style.input} type='text' id='login'/>
@@ -65,7 +65,7 @@ export const Registration = props => {
             </div>
 
             <div className={style.submitWrap}>
-              <button className={style.submit}>Далее</button>
+              <button className={style.submit} type='button'>Далее</button>
             </div>
           </fieldset>
         </form>

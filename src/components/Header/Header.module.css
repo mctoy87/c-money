@@ -17,7 +17,7 @@
   z-index: -1; /* За контейнером */
 }
 
-@media (max-width:1041px) {
+@media (max-width:1100px) {
   .header::before {
     padding: 20px 0 54px 0;
     top: -112px;

@@ -8,7 +8,7 @@
 
 .logo {
   width: 100%;
-  width: 141px;
+  min-width: 141px;
 }
 
 .logoWrap {
@@ -56,7 +56,7 @@
 
 .contactItem {
   margin-bottom: 14px;
-  white-space: no-wrap;
+  white-space: nowrap;
   
   &:last-child {
     margin-bottom: auto;
@@ -80,7 +80,13 @@
 }
 
 .socialLink {
+  color: #6E479E;
+  outline: none;
 
+  &:focus,
+  &:hover {
+    color: #B865D6;
+  }
 }
 
 .mapWrapper {
@@ -92,7 +98,7 @@
 }
 
 
-@media (max-width:1041px) {
+@media (max-width:1100px) {
   .logoWrap {
     margin-right: 43px;
   }
@@ -117,6 +123,11 @@
     width: 100%;
     margin-right: 0;
     margin-bottom: 18px;
+  }
+
+  .logo {
+    width: 141px;
+    min-width: auto;
   }
 
   .links {
@@ -186,5 +197,15 @@
 
   .copyright {
     font-size: 14px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .socialLink:hover {
+    color: #6E479E; /* Убираем эффект hover */
+  }
+
+  .socialLink:active {
+    color: #B865D6; /* Убираем эффект hover */
   }
 }
